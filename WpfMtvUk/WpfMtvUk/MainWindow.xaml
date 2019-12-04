@@ -1,0 +1,19 @@
+﻿<Window x:Class="WpfMtvUk.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfMtvUk"
+        mc:Ignorable="d"
+        Title="MTV Charts" Height="450" Width="810">
+    <Grid>
+        <ComboBox Name="Charts" SelectionChanged="Charts_SelectionChanged" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="506" Height="25"/>
+        <Button Content="Update" Click="Button_Click" HorizontalAlignment="Left" Margin="530,10,0,0" VerticalAlignment="Top" Width="255" Height="25"/>
+        <ListBox x:Name="ChartBox" SelectionChanged="ChartBox_SelectionChanged"  Margin="10,100,294,10"/>
+        <Image x:Name="TrackPosterImg"  HorizontalAlignment="Left" Height="158" Margin="530,100,0,0" VerticalAlignment="Top" Width="258" RenderTransformOrigin="0.5,0.52"/>
+        <Label x:Name="ChartNameLbl" Content="" FontSize="17" HorizontalAlignment="Left" Margin="10,56,0,0" VerticalAlignment="Top" Width="506"/>
+        <Label x:Name="TrackNameLbl"  Content="" FontSize="17" HorizontalAlignment="Left" Margin="530,295,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="ArtistameLbl" Content="" FontSize="17" HorizontalAlignment="Left" Margin="535,349,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
